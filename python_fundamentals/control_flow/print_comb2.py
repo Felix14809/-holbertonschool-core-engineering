@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 for n in range(99):
     print(f"{n:02d}, ", end='')
-print(n + 1)
+print(f"{n + 1}")

@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 number = __import__('random').randint(-10000, 10000)
-last = number % 10
-
-if last > 5:
-    print(f"Last digit of {number} is {last} and is greater than 5")
-elif last == 0:
-    print(f"Last digit of {number} is {last} and is 0")
-else:
-    print(f"Last digit of {number} is {last} and is less than 6 and not 0")
+print(number)
+if number > 0 and number % 10 > 5:
+    print(f"Last digit of {number} is {number % 10} and is greater than 5")
+elif number % 10 == 0:
+    print(f"Last digit of {number} is {0} and is 0")
+elif number % 10 < 6 or number < 6:
+    if number < 0:
+        last = (number * -1) % 10 * -1
+        print(f"Last digit of {number} is {last} and is less than 6 and not 0")
+    else:
+        print(f"Last digit of {number} is {number % 10} and is less than 6 and not 0")

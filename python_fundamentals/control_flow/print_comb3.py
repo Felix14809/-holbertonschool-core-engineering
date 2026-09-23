@@ -9,4 +9,4 @@ for n in range(1, 100):
         if n > 1:
             print(", ", end='')
         print(f"{n:02d}", end='')
-print()
+print(f"\n")
