@@ -8,5 +8,5 @@ for n in range(1, 100):
         banned.append(int(doubles))
         if n > 1:
             print(", ", end='')
-        print(f"{n:02d}", end='')
-print(f"\n")
+        print("{0:02d}".format(n), end='')
+print()
