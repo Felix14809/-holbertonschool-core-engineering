@@ -2,5 +2,5 @@
 letter = 97
 for i in range(25):
     if chr(letter) != 'e' and chr(letter) != 'q':
-        print("{0}".format(chr(letter)), end=0)
+        print("{0}".format(chr(letter)), end='')
     letter = letter + 1
