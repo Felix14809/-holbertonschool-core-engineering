@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 def print_matrix_integer(matrix=[[]]):
     for row in matrix:
-        i = 0
+        space = False
         for item in row:
-            if i is not 0:
-                print(" ")
+            print(" "if space else "", end='')
             print("{:d}".format(item), end='')
-            i = 1
+            space = True
         print()

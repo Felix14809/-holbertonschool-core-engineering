@@ -4,7 +4,7 @@ def best_score(a_dictionary):
         return None
     bigkey = None
     for key, v in a_dictionary.items():
-        if biggest is None:
+        if bigkey is None:
             biggest = v
             bigkey = key
         elif v > biggest:
