@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-print_matrix_integer = __import__('print_matrix_integer').print_matrix_integer
+replace_in_list = __import__('replace_in_list').replace_in_list
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-print_matrix_integer(matrix)
+my_list = [1, 2, 0, 0, 5]
+print(replace_in_list(my_list, 1, 4))
+print(replace_in_list(my_list, 15, 99))

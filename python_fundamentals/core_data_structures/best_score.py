@@ -6,6 +6,8 @@ def best_score(a_dictionary):
     for key, v in a_dictionary.items():
         if biggest is None:
             biggest = v
+            bigkey = key
         elif v > biggest:
             biggest = v
-    return biggest
+            bigkey = key
+    return bigkey
