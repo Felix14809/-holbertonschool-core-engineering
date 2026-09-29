@@ -3,5 +3,5 @@ safe_print_list = __import__('safe_print_list').safe_print_list
 
 my_list = [1, 2, 3, 4, 5]
 
-nb_print = safe_print_list(my_list, 10)
+nb_print = safe_print_list(my_list, 0)
 print(f"elements: {nb_print}")
