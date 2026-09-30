@@ -1,36 +1,30 @@
-class Rectangle:
-    def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
+#!/usr/bin/env python3
+"""Defines a Rectangle class"""
+
+
+class Square:
+    """Represents a rectangle."""
+
+    def __init__(self, size=0):
+        self.size = size
 
     @property
-    def width(self):
-        return self.__width
+    def size(self):
+        return self.__size
 
-    @width.setter
-    def width(self, value):
+    @size.setter
+    def size(self, value):
         if type(value) is not int:
-            raise TypeError("width must be an integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError("width must be >= 0")
-        self.__width = value
-
-    @property
-    def height(self):
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        elif value < 0:
-            raise ValueError("height must be >= 0")
-        self.__height = value
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     def area(self):
-        return self.__width * self.__height
+        return self.__size * self.__size
 
-    def perimeter(self):
-        if self.__width <= 0 or self.__height <= 0:
-            return 0
-        return self.__width * 2 + self.__height * 2
+    def my_print(self):
+        for _ in range(self.__size + 1):
+            for n in range(self.__size):
+                print('#', end='')
+            print()

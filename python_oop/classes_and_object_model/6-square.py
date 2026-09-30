@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
+"""Defines a Square class"""
+
+
 class Square:
+    """Represents a Square"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position

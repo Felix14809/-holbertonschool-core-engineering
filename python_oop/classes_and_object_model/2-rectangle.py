@@ -1,4 +1,9 @@
-class Rectangle:
+#!/usr/bin/env python3
+"""Defines a Rectangle class"""
+
+
+class Square:
+    """Represents a rectangle."""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
