@@ -2,8 +2,8 @@
 """Defines a Rectangle class"""
 
 
-class Square:
-    """Represents a rectangle."""
+class Rectangle:
+    """Represents a Rectangle."""
 
     def __init__(self, size=0):
         self.size = size
