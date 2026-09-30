@@ -43,3 +43,6 @@ class Square:
             string += ' ' * self.__position[0] + '#' * self.__size
             string += "\n"
         return string[:-1] if self.__size else ' '
+
+    def my_print(self):
+        print (self)
