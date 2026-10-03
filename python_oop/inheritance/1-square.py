@@ -5,7 +5,6 @@
 Rectangle = __import__('2-rectangle').Rectangle
 
 
-
 class Square(Rectangle):
     """Represents a Square"""
     def __init__(self, size):
