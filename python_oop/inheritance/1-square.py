@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-Rectangle = __import__('2-rectangle').Rectangle
 """Defines a square class"""
+
+
+Rectangle = __import__('2-rectangle').Rectangle
+
 
 
 class Square(Rectangle):
