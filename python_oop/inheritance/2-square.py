@@ -18,15 +18,16 @@ class Rectangle(BaseGeometry):
     """Represents a Rectangle."""
     def __init__(self, width, height):
         self.integer_validator("width", width)
-        self.__width = width
+        self.width = width
         self.integer_validator("height", height)
-        self.__height = height
-        
+        self.height = height
+
     def area(self):
-        return self.__width * self.__height
+        return self.width * self.height
 
     def __str__(self):
-        return "[{}] {}/{}".format(type(self).__name__, self.__width, self.__height)
+        s = "[{}] {}/{}".format(type(self).__name__, self.width, self.height)
+        return s
 
 
 class Square(Rectangle):
@@ -35,4 +36,3 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
-    
